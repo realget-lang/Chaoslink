@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class StatementManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Canvas canvas;
+    public TextMeshPro _statement;
+
     void Start()
     {
         
@@ -14,5 +17,9 @@ public class StatementManager : MonoBehaviour
     void Update()
     {
         
+    }
+    void setupStatement()
+    {
+
     }
 }
