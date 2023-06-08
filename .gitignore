@@ -1,5 +1,7 @@
 .vscode
 
+*.csproj
+
 Logs
 obj
 Temp
