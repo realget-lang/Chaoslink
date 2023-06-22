@@ -9,46 +9,25 @@ public enum StatementDirection
     UP,
     DOWN
 }
-public class Statement
+
+public enum StatementStatus
 {
-    string text;
-    int weakPointStart;
-    int weakPointEnd;
+    PREPARING,
+    SHOWING,
+    OFFSCREEN
+}
 
-    StatementDirection directionIn = StatementDirection.LEFT;
-    StatementDirection directionOut = StatementDirection.RIGHT;
+[CreateAssetMenu(menuName = "Statement", fileName = "Statement")]
+public class Statement : ScriptableObject
+{
+    public string text;
+    public int weakPointStart;
+    public int weakPointEnd;
 
-    LeanTweenType easingStyle = LeanTweenType.easeInOutExpo;
+    public StatementDirection directionIn = StatementDirection.LEFT;
+    public StatementDirection directionOut = StatementDirection.RIGHT;
 
-    Vector3 positionOnScreen;
-    
-    public Statement(string _text)
-    {
-        this.text = _text;
+    public LeanTweenType easingStyle = LeanTweenType.easeInOutExpo;
 
-        this.weakPointStart = _text.IndexOf("[", 0);
-        this.weakPointEnd = _text.IndexOf("]", 0);
-    }
-    
-    
-    void setDirection(StatementDirection statementDirection, int direction)
-    {
-        if (direction == 0)
-        {
-            this.directionIn = statementDirection;
-            return;
-        }
-
-        this.directionOut = statementDirection;
-    }
-    void setPositionOnScreen(Vector3 positionOnScreen)
-    {
-        this.positionOnScreen = positionOnScreen;
-    }
-
-    void setEasingStyle(LeanTweenType ease)
-    {
-        this.easingStyle = ease;
-    }
-
+    public Vector3 positionOnScreen;
 }

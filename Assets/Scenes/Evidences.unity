@@ -314,8 +314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af29421b857dd54d95da9e7af69b793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  _statement: {fileID: 0}
+  canvas: {fileID: 1972506287}
+  statementTest: {fileID: 11400000, guid: 54cea0dda9cb51d47a4929bbd95c5f9a, type: 2}
+  defaultStatement: {fileID: 8947765200129583563, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
 --- !u!4 &922085872
 Transform:
   m_ObjectHideFlags: 0
@@ -715,11 +716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2753670384563619217, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -510
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2753670384563619217, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -230
       objectReference: {fileID: 0}
     - target: {fileID: 2753670384563619217, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -734,8 +735,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5918406761916758724, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
+      propertyPath: m_text
+      value: asjdfjsdjafaksdfksadkfjksadkfka;
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918406761916758724, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
       propertyPath: m_fontSize
-      value: 71.45
+      value: 21.85
       objectReference: {fileID: 0}
     - target: {fileID: 5918406761916758724, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
       propertyPath: m_margin.w
@@ -755,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8947765200129583563, guid: 55959222ce6cf9e46a609cf059aa191b, type: 3}
       propertyPath: m_Name
-      value: Statement
+      value: _Statement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
